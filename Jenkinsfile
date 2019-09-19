@@ -6,6 +6,8 @@ pipeline {
                 script{
                     println "my first code testing"
                     println "my first code testing twice"
+                    println "my first code testing twice"
+
                 }
             }
         }
