@@ -4,7 +4,7 @@ pipeline {
         stage('Setup') {
             steps {
                 script{
-                    println "my first code"
+                    println "my first code testing"
                 }
             }
         }
