@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                sh 'my first pipeline'
+                script{
+                    println "my first code"
+                }
             }
         }
     }
