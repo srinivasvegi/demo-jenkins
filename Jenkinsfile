@@ -5,6 +5,7 @@ pipeline {
             steps {
                 script{
                     println "my first code testing"
+                    println "my first code testing twice"
                 }
             }
         }
