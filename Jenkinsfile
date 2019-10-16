@@ -6,21 +6,15 @@ pipeline {
         }
        stage ('Compile Stage') {
          withMaven (Maven : 'Maven_3_5_0') {
-             sh 'mvn clean compile'
+             sh 'mvn --version'
          }
          stage ('Testing Stage') {
           withMaven (Maven : 'Maven_3_5_0') {
-             sh 'mvn test'
+             sh 'echo "my forst code"'
          }
-
-         stage ('Deploy Stage') {
-          withMaven (Maven : 'Maven_3_5_0') {
-             sh 'mvn deploy'
-
-       }
             
-            }
+        }
       
       }
-       }
     }
+}
