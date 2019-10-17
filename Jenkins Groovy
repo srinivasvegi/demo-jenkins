@@ -24,12 +24,6 @@ pipeline {
               // Steps to test your build //
           }
       }
-     
-        stage('Code Analysis'){
-            steps {
-              // Analyise the build code //
-            }
-        }
           stage('Deploy') {
               steps {
                   // Steps to Deploy into prod//
