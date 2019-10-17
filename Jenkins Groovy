@@ -9,7 +9,32 @@ pipeline {
                 // add your steps to clean your workspace //
          }
      }
-
+      stage('Commit'){
+          steps {
+              // steps to commit  //
+          }
+      }
+      stage('Build'){
+          steps {
+              // steps to Build your pipeline //
+          }
+      }
+      stage('Test'){
+          steps {
+              // Steps to test your build //
+          }
+      }
+     
+        stage('Code Analysis'){
+            steps {
+              // Analyise the build code //
+            }
+        }
+          stage('Deploy') {
+              steps {
+                  // Steps to Deploy into prod//
+              }
+        }
      }       
 
 
